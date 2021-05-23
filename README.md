@@ -121,6 +121,4 @@ Upgrade Node Packages to Eliminate Vulnerabilities
 Upgrade Bower Packages
 ------------------------
 
-        npm install -g bower-check-updates
-        bower-check-updates -u
-        bower install
+While documentations suggests the use of `bower-check-updates`, that mechanism did not seem to work. Given the small number of dependencies listed in bower.json, used `bower install --save --allow-root` with each dependency listed in bower.json.
